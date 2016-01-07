@@ -16,6 +16,7 @@
     "url": "https://github.com/mkifia/testjs/issues"
   },
   "devDependencies": {
-    "mocha": "~2.3.4"
+    "mocha": "~2.3.4",
+    "chai": "~3.4.1"
   }
 }
