@@ -7,6 +7,7 @@ describe('test de demo', function() {
 		b = a * 3;
 
 		assert.equal(b, 6, 'la multiplication a fonctionnée');
+		// assert.equal(b, 7, 'la multiplication a échouée');
 
 	});
 });

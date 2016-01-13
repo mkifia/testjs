@@ -20,11 +20,12 @@ describe('Social', function() {
 
 		it('should be a function', function() {
 			expect(Social.getTwitterCount).to.be.a('function');
-		})
+		});
+		
 		it('should call callAPI', function() {
 			sinon.spy(Social, 'callAPI');
 			Social.getTwitterCount(url);
 			expect(Social.callAPI.withArgs(Social.twitter_url + url).calledOnce).to.be.true;
-		})
-	})
-})
+		});
+	});
+});
