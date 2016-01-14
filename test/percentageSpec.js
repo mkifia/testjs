@@ -8,7 +8,7 @@ describe('Percentage', function () {
 	
 	describe('#evolution', function () {
 		
-		// 
+		//
 		it('give an evolution in percentage', function() {
 
 			expect(Percentage.evolution(100, 200)).to.be.equal(100);
@@ -24,4 +24,17 @@ describe('Percentage', function () {
 			expect(Percentage.evolution(30, 100)).to.be.equal(233.33);
 		})
 	});
+
+	describe('#wait', function() {
+		it('should wait an equal value', function(done) {
+			Percentage.wait(300, function(test) {
+				assert.equal(test, 18);
+				done();
+			})
+		})
+
+		it('should exit', function() {
+			assert.notEqual(Percentage.wait, undefined);
+		})
+	})
 })
